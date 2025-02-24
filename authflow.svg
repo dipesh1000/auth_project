@@ -1,0 +1,25 @@
+graph TD;
+    A[User Registration] --> B[Check if User Exists?]
+    B -->|No| C[Create New User]
+    B -->|Yes| D[Error: User Already Exists]
+    C --> E[Generate OTP]
+    E --> F[Send OTP via Email]
+    F --> G[Update User with OTP]
+    G --> H[User Verification]
+    H --> I[User Clicks on Verification Link]
+    I --> J[Verify OTP]
+    J -->|Valid| K[Email Verified Successfully]
+    J -->|Invalid| L[Error: Invalid OTP]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px;
+    style B fill:#ff9,stroke:#333,stroke-width:2px;
+    style C fill:#9f9,stroke:#333,stroke-width:2px;
+    style D fill:#f99,stroke:#333,stroke-width:2px;
+    style E fill:#9ff,stroke:#333,stroke-width:2px;
+    style F fill:#99f,stroke:#333,stroke-width:2px;
+    style G fill:#ff9,stroke:#333,stroke-width:2px;
+    style H fill:#f9f,stroke:#333,stroke-width:2px;
+    style I fill:#9f9,stroke:#333,stroke-width:2px;
+    style J fill:#99f,stroke:#333,stroke-width:2px;
+    style K fill:#9ff,stroke:#333,stroke-width:2px;
+    style L fill:#f99,stroke:#333,stroke-width:2px;
