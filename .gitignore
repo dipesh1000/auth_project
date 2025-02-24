@@ -1,5 +1,9 @@
 # Ignore node modules and dependencies
-node_modules/
+mern-auth-server/node_modules/
+mern-auth-web/node_modules/
+
+mern-auth-server/.env/
+mern-auth-web/.env/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
